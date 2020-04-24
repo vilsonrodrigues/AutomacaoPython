@@ -2,20 +2,19 @@
 import schedule 
 import time
 
-def TarefaCadaDezSegundos():
+def tarefaCadaDezSegundos():
 	print('Realizando tarefa')
 
-
-def TarefaTodaSexta():
+def tarefaTodaSexta():
 	print('Olá bom dia, hoje é sexta-feira')
 
-def TarefaTodaSegundaOitoHoras():
+def tarefaTodaSegundaOitoHoras():
 	print('Sei que toda segunda é triste mas temos que trabalhar')
 
-def TarefaTodaDiaSeteoHoras():
+def tarefaTodaDiaSeteoHoras():
 	print('bora acordar pra trabaia')
 
-def ModulosSchedule():
+def modulosSchedule():
 	#schedule.a-cada.tempo.faça
 	schedule.every(10).secounds.do(TarefaCadaDezSegundos)
 	#schedule.a-cada.sexta.faça
