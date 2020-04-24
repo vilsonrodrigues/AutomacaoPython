@@ -16,7 +16,7 @@ def tarefaTodaDiaSeteoHoras():
 
 def modulosSchedule():
 	#schedule.a-cada.tempo.faça
-	schedule.every(10).secounds.do(TarefaCadaDezSegundos)
+	schedule.every(10).seconds.do(TarefaCadaDezSegundos)
 	#schedule.a-cada.sexta.faça
 	schedule.every().friday.do(TarefaTodaSexta)
 	#schedule.a-cada.segunda.as.faça
