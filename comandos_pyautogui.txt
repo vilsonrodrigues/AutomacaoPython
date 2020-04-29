@@ -18,6 +18,10 @@ Realiza busca de imagem especifica e depois o click
 Duplo click
 .doubleClick()
 
+Rolagem do mouse
+.scroll(10)
+.scroll(-10)
+
 Pressiona tecla
 .press('')
 
@@ -28,7 +32,7 @@ Pressiona sequencia de teclas
 .hotkey('ctrl', 'c')
 
 Escreve texto
-pyautogui.typewrite('')
+.write('')
 
 Mantem a tecla pra baixo
 .keyDown('shift')
