@@ -1,0 +1,75 @@
+Comandos pyautogui
+
+Tamanho do display
+tamx,tamy = pyautogui.size()
+
+Posicao x e y do mouse na tela
+posx, posy = pyautogui.position()
+
+Leva o Mouse a uma posição (x,y)
+.moveTo()
+
+Realiza o click
+.click()
+
+Realiza busca de imagem especifica e depois o click
+.click('button.png')
+
+Duplo click
+.doubleClick()
+
+Pressiona tecla
+.press('')
+
+Pressiona sequencia de teclas
+.press(['left', 'left', 'left', 'left'])
+
+Pressiona sequencia de teclas
+.hotkey('ctrl', 'c')
+
+Escreve texto
+pyautogui.typewrite('')
+
+Mantem a tecla pra baixo
+.keyDown('shift')
+
+Mantem a tecla pra cima
+.keyUp('shift')
+
+Caixa de alerta que so continua depois do ok
+.alert(text='', title='', button='OK')
+
+Caixa de alerta com 2 botao, ok e cancel
+.confirm(text='', title='', buttons=['OK', 'Cancel'])
+
+Caixa de alerta que retorna texto
+.prompt(text='', title='' , default='')
+
+Caixa de password retorna um texto que quando digitado fica com *
+.password(text='', title='', default='', mask='*')
+
+
+Captura de tela
+
+Realiza a captura de tela e salva com um nome especifico
+img = pyautogui.screenshot('my_screenshot.png')
+
+Capturando um local especifico
+.screenshot(region=(0,0, 300, 400))
+
+
+Procurando imagem dentro de um programa
+
+na calc, retorna coordenadas centrais
+img = .locateCenterOnScreen('calc7key.png')
+
+é possivel utilizar o parametro, grayscale=True, para deixar
+a imagem em cinza e acelerar a busca
+
+
+Pegando a cor de um pixel especifico
+Retorna RGB
+im = pyautogui.screenshot()
+im.getpixel((100, 200))
+
+
