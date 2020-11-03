@@ -16,15 +16,15 @@ def tarefaTodaDiaSeteoHoras():
 
 def modulosSchedule():
 	#schedule.a-cada.tempo.faça
-	schedule.every(10).seconds.do(TarefaCadaDezSegundos)
+	schedule.every(10).seconds.do(tarefaCadaDezSegundos)
 	#schedule.a-cada.sexta.faça
-	schedule.every().friday.do(TarefaTodaSexta)
+	schedule.every().friday.do(tarefaTodaSexta)
 	#schedule.a-cada.segunda.as.faça
-	schedule.every().monday.at('08:00').do(TarefaTodaSegundaOitoHoras)
+	schedule.every().monday.at('08:00').do(tarefaTodaSegundaOitoHoras)
 	#schedule.todo.dia.as.faça
-	schedule.every().day.at('08:00').do(TarefaTodaDiaSeteoHoras)
+	schedule.every().day.at('08:00').do(tarefaTodaDiaSeteoHoras)
 
 while True:
 	#Roda todas as tarefas
-	ModulosSchedule()
+	modulosSchedule()
 	schedule.run_pending()
